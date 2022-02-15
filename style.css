@@ -1,0 +1,169 @@
+body,
+html {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: #F8F5F1;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  background: #45526C;
+}
+a {
+  color: #45526C;
+  text-decoration: none;
+}
+.inputBar {
+  border: none;
+  height: 30px;
+  width: 85%;
+  color: #F8F5F1;
+  background: transparent;
+  margin-left: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.inputBar:focus {
+  outline: none;
+}
+.searchButton {
+  background: none;
+  border: none;
+  margin-right: 0.75rem;
+}
+.inputDiv {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchDiv {
+  width: 300px;
+  border: 2px solid #6bc3d3;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  position: relative;
+  top: 1.5rem;
+}
+.displayDiv {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 3rem;
+}
+.dataDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative; 
+  top: 5rem;
+}
+.dataDiv h5 {
+  font-weight: 400;
+}
+.tempDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 160px;
+  position: relative;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+.feelslike,
+.humidity,
+.windspeed,
+.winddegree,
+.pressure {
+  width: 7rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+.title {
+  margin: 0 0 1rem 0;
+}
+.date {
+  position: absolute;
+  top: 6.5rem;
+  font-size: 0.7rem;
+}
+
+.location {
+  font-size: 3rem;
+}
+
+.temperature {
+  font-size: 100px;
+  margin-left: 2rem;
+}
+
+.description {
+  width: 80%;
+  text-align: center;
+  margin: 0;
+}
+
+::placeholder {
+  color: #F8F5F1;
+  text-align: center;
+  opacity: 40%;
+}
+.icon {
+  filter: invert(87%) sepia(25%) saturate(463%) hue-rotate(139deg) brightness(99%) contrast(93%);
+  height: 100px;
+}
+.searchicon {
+  height: 1rem;
+  filter: invert(100%) sepia(63%) saturate(1206%) hue-rotate(284deg) brightness(131%) contrast(92%);
+}
+.credit {
+  font-size: 11px;
+  position: absolute;
+  bottom: -2rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .dataDiv {
+      flex-direction: column;
+      flex-wrap: wrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      align-items: center;
+  }
+  .date {
+      display: none;
+  }
+}
+@media only screen and (min-height: 700px) and (min-width: 1200px) {
+  .displayDiv {
+      justify-content: center;
+      position: absolute;
+      top: 8rem;
+  }
+  .dataDiv {
+      justify-content: center;
+  }
+  .dataDiv h3 {
+      margin-left: 2rem;
+  }
+  .credit {
+      position: relative;
+      top: 20rem;
+  }
+}
