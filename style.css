@@ -69,8 +69,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  position: relative; 
-  top: 5rem;
+  position: fixed;
+  bottom: 2.5rem;
 }
 .dataDiv h5 {
   font-weight: 400;
@@ -134,8 +134,8 @@ a {
 }
 .credit {
   font-size: 11px;
-  position: absolute;
-  bottom: -2rem;
+  position: fixed;
+  bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 576px) {
@@ -161,9 +161,5 @@ a {
   }
   .dataDiv h3 {
       margin-left: 2rem;
-  }
-  .credit {
-      position: relative;
-      top: 25rem;
   }
 }
