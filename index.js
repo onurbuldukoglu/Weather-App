@@ -95,11 +95,6 @@ function displayData(data) {
             document.querySelector('.icon').setAttribute('src', './images/fog.svg');
             break;
     }
-    if (temp<=10) {
-        document.body.style.background = "linear-gradient(#45526C, #6bc3d3)";    
-    } else {
-        document.body.style.background = "linear-gradient(#45526C, #d39a6b)";
-    }
 
 }
 function displayContent() {

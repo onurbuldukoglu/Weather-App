@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
-  background: #45526C;
+  background: linear-gradient(#45526C, #6bc3d3);
 }
 a {
   color: #45526C;
